@@ -8,9 +8,8 @@ public class Jugador {
         this.puntuacion = puntuacion;
     }
 
-    //Metodo estatico que intenta usar `this` (producirá un error)
-    public void mostrarDetallesEstatico() {
-        //Error: No se puede usar `this` en un contexto estatico
+    //Metodo funcional
+    public void mostrarDetalles() {
         System.out.println("Nombre: " + nombre); 
         System.out.println("Puntuación: " + puntuacion); 
     }
@@ -19,7 +18,7 @@ public class Jugador {
         // Crear un objeto Jugador
         Jugador jugador = new Jugador("Duppy", 50);
 
-        // Llamar al método estático
-        jugador.mostrarDetallesEstatico();
+        // Llamar al método mostrar detalles referenciando a clase jguador que es el objeto recién creado
+        jugador.mostrarDetalles();
     }
 }

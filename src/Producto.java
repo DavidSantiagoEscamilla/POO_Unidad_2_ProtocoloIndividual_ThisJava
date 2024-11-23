@@ -13,7 +13,15 @@ public class Producto {
         System.out.println("Nombre del producto: " + nombre);
         System.out.println("Precio del producto: $" + precio);
     }
+    
+    //Getters
+    public String getNombre(){
+        return nombre;
+    }
 
+    public double getPrecio(){
+        return precio;
+    }
 
     //Metodo para probar la clase
     public static void main(String[] args) {
